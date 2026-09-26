@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Formulir Data Diri</title>
+  </head>
+
+  <body text="white" bgcolor="#A31F34">
+    <center>
+      <h2>Formulir Data Diri</h2>
+
+      <form method="post" action="output.html">
+        <table>
+          <tr>
+            <td>Nama Lengkap</td>
+            <td>: <input type="text" name="nama" size="30"></td>
+          </tr>
+
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>
+              : <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+              <input type="radio" name="jk" value="Perempuan"> Perempuan
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tempat, Tanggal Lahir</td>
+            <td>
+               : <input type="text" name="tempat_lahir" size="15"> , 
+                <input type="date" name="tgl_lahir">
+            </td>
+          </tr>
+
+          <tr>
+            <td>Alamat</td>
+            <td>: <textarea name="alamat" rows="4" cols="30"></textarea></td>
+          </tr>
+
+          <tr>
+            <td>Jurusan</td>
+            <td>: 
+              <select name="jurusan">
+                <option value="">-- Pilih Jurusan --</option>
+                <option value="Informatika">Informatika</option>
+                <option value="Teknik Sipil">Teknik Sipil</option>
+                <option value="Teknik Elektro">Teknik Elektro</option>
+                <option value="Teknik Mesin">Teknik Mesin</option>
+                <option value="Arsitektur">Arsitektur</option>
+                <option value="Teknik Lingkungan">Teknik Lingkungan</option>
+                <option value="Teknik Industri">Teknik Industri</option>
+                <option value="Teknik Kimia">Teknik Kimia</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Hobi</td>
+            <td>
+              : <textarea name="hobi"></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tentang Saya</td>
+            <td>: <textarea name="tentang_saya" rows="4" cols="30"></textarea></td>
+          </tr>
+        </table>
+
+        <br>
+        <input type="submit" value="Simpan" name="t1">
+        <input type="reset" value="Reset" name="t2">
+      </form>
+    </center>
+  </body>
+</html>
