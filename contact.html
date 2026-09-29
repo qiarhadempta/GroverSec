@@ -69,10 +69,18 @@
                 margin-bottom: 10px;
             }
 
+            form h2 {
+                margin-top: 0;
+            }
+
             p {
                 font-size: 1.1rem;
                 color: #A0AEC0;
                 line-height: 1.6;
+            }
+
+            h3 {
+                font-family: 'Space Grotesk', sans-serif;
             }
 
             footer {
@@ -90,34 +98,11 @@
             
             label {display: block;}
             
-            input[type=text], select {
+            input[type=text], input[type=email], input[type=number], textarea, select {
                 font-family: 'Space Grotesk', sans-serif;
                 width: 100%;
                 padding: 12px;
                 margin: 8px 0;
-                display: inline-block;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-            }
-
-            input[type=email], select {
-                font-family: 'Space Grotesk', sans-serif;
-                width: 100%;
-                padding: 12px;
-                margin: 8px 0;
-                display: inline-block;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-            }
-
-            input[type=number], select {
-                font-family: 'Space Grotesk', sans-serif;
-                width: 100%;
-                padding: 12px;
-                margin: 8px 0;
-                display: inline-block;
                 border: 1px solid #ccc;
                 border-radius: 4px;
                 box-sizing: border-box;
@@ -139,16 +124,25 @@
                 background-color: #45a049;
             }
 
-            input[type=textarea], select {
-                font-family: 'Space Grotesk', sans-serif;
+            .contact-columns {
                 width: 100%;
-                padding: 12px;
-                margin: 8px 0;
-                display: inline-block;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
+                border-collapse: separate;
+                border-spacing: 20px 0;
             }
+ 
+            .contact-columns td {
+                vertical-align: top;
+                width: 50%;
+            }
+ 
+            .info-box {
+                background-color: #1E293B;
+                border: 1px solid #334155;
+                border-radius: 8px;
+                padding: 16px 20px;
+                margin-bottom: 16px;
+            }
+
 
         </style>
 
@@ -159,7 +153,7 @@
             <tr>
                 <td>
                     <nav>
-                        <div style = "color: red;" class="logo">GroverSec</div>
+                        <div style="color: red;" class="logo">GroverSec</div>
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
@@ -169,38 +163,65 @@
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
-
                 </td>
             </tr>
 
             <tr><td>
                 <main>
-                    <h1>Get in touch with Us</h1>
-                    <p align="justify">We'd love to hear from you! Whether you have questions about our research, want to collaborate, or just want to say hello, feel free to reach out. If you are unable to find what you're looking for, or if you have a support request, we're here to help. Just complete and submit the form and one of our Support Team members will assist you.</p>
-
-                    <h2>Contact Support</h2>
-                    <form method="post" action="index.html">
-                        <label for="fname">First name:</label>
-                        <input type="text" id="fname" name="fname"><br>
-                        <label for="lname">Last name:</label>
-                        <input type="text" id="lname" name="lname"><br>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">
-                        <label for="phone">Phone Number:</label>
-                        <input type="number" id="phone" name="phone" placeholder="Phone Number">
-                        <label for="cars">My inquiry is about:</label>
-                        <select id="cars" name="cars">
-                        <option value="Purchase">Purchase</option>
-                        <option value="Support">Support</option>
-                        <option value="Feedback">Feedback</option>
-                        <option value="Other">Other</option>
-                    </select>
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" cols="126"></textarea>
-
-                    <input type="submit" value="Submit">
-                </form>
+                    <h1>Get in Touch with Us</h1>
+                    <p>We'd love to hear from you! Whether you have questions about our research, want to collaborate, or just want to say hello, feel free to reach out.</p>
+ 
+                    <table class="contact-columns">
+                        <tr>
+                            <td>
+                                <div class="info-box">
+                                    <h2>Book a Meeting</h2>
+                                    <p>Schedule a call with our research team to discuss potential collaboration.</p>
+                                </div>
+ 
+                                <div class="info-box">
+                                    <h2>Partnership</h2>
+                                    <p>Interested in partnering with GroverSec? Let's talk about how we can work together.</p>
+                                </div>
+ 
+                                <div class="info-box">
+                                    <h2>Email Us</h2>
+                                    <p>contact@groversec.ai</p>
+                                </div>
+                            </td>
+ 
+                            <td>
+                                <form method="post" action="index.html">
+                                    <h2>Send Us a Message</h2>
+ 
+                                    <label for="fname">First name:</label>
+                                    <input type="text" id="fname" name="fname">
+ 
+                                    <label for="lname">Last name:</label>
+                                    <input type="text" id="lname" name="lname">
+ 
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email">
+ 
+                                    <label for="phone">Phone Number:</label>
+                                    <input type="number" id="phone" name="phone" placeholder="Phone Number">
+ 
+                                    <label for="inquiry">My inquiry is about:</label>
+                                    <select id="inquiry" name="inquiry">
+                                        <option value="Purchase">Purchase</option>
+                                        <option value="Support">Support</option>
+                                        <option value="Feedback">Feedback</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+ 
+                                    <label for="message">Message:</label>
+                                    <textarea id="message" name="message" rows="4"></textarea>
+ 
+                                    <input type="submit" value="Submit">
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
                 </main>
             </td></tr>
 
