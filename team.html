@@ -129,19 +129,18 @@
                 justify-content: center;
             }
 
+            .row {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 20px;
+                margin-top: 30px;
+            }
+            
             .column {
-                float: left;
-                width: 25%;
-                padding: 0 10px;
+                width: auto;
             }
             
             .row {margin: 0 -5px;}
-
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
 
             @media screen and (max-width: 600px) {
                 .column {
@@ -157,6 +156,14 @@
                 padding: 8px;
                 background-color: #1E293B;
                 color: #A0AEC0;
+            }
+
+            .card img {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-bottom: 16px;
             }
 
         </style>
@@ -185,7 +192,52 @@
 
             <tr>
                 <td>
-                    <section></section>
+                    <main>
+                        <h1>Our Team</h1>
+                        <p>Meet the research leads driving each of GroverSec's focus areas.</p>
+ 
+                        <div class="row">
+                            <div class="column">
+                                <div class="card">
+                                    <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*IHsKzmCjT75An2yw_SXKCw.jpeg" alt="Chantiqia Rhadempta Ayu Parasasti">
+                                    <h3>Chantiqia Rhadempta Ayu Parasasti</h3>
+                                    <p class="role">Lead, Cryptography &amp; PQC</p>
+                                    <p class="institution">Massachusetts Institute of Technology</p>
+                                    <p class="bio">Focuses on evaluating post-quantum signature schemes and their real-world deployment in secure communication protocols.</p>
+                                </div>
+                            </div>
+ 
+                            <div class="column">
+                                <div class="card">
+                                    <img src="https://cdn.britannica.com/36/194736-050-CA5BE18B/Carl-Sagan-science-writer-American.jpg?w=300" alt="Carl Edward Sagan">
+                                    <h3>Carl Edward Sagan</h3>
+                                    <p class="role">Lead, Network Security</p>
+                                    <p class="institution">The University of Chicago</p>
+                                    <p class="bio">Specializes in intrusion detection systems and traffic analysis for large-scale enterprise networks.</p>
+                                </div>
+                            </div>
+ 
+                            <div class="column">
+                                <div class="card">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Dorothy-Denning-Feb2013-head.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled" alt="Dorothy Denning">
+                                    <h3>Dorothy Denning</h3>
+                                    <p class="role">Lead, AI &amp; ML Security</p>
+                                    <p class="institution">Purdue University</p>
+                                    <p class="bio">Researches adversarial robustness in machine learning models and defenses against model evasion attacks.</p>
+                                </div>
+                            </div>
+ 
+                            <div class="column">
+                                <div class="card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO9BHPFgXsBcXNeI-RpI7_nGzru26U9DOny2mMemY5_jmW6KKL0yDNJjjF&s=10" alt="Ralph Merkle">
+                                    <h3>Ralph Merkle</h3>
+                                    <p class="role">Lead, IoT &amp; Embedded Security</p>
+                                    <p class="institution">Stanford University</p>
+                                    <p class="bio">Works on lightweight authentication and security mechanisms for resource-constrained embedded devices.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
                 </td>
             </tr>
 
