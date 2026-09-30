@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>GroverSec</title>
+        <title>Research - GroverSec</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
                 margin: 0;
                 padding: 0;
             }
-
+ 
             nav {
                 display: flex;
                 justify-content: space-between;
@@ -25,13 +25,14 @@
                 padding: 20px 40px;
                 border-bottom: 1px solid #0A3A5C;
             }
-
+ 
             nav .logo {
                 font-family: 'Space Grotesk', sans-serif;
                 font-weight: 700;
                 font-size: 1.3rem;
+                color: red;
             }
-
+ 
             nav ul {
                 list-style: none;
                 display: flex;
@@ -39,45 +40,50 @@
                 margin: 0;
                 padding: 0;
             }
-
+ 
             nav ul li a {
                 color: #A0AEC0;
                 text-decoration: none;
                 font-size: 0.95rem;
             }
-
+ 
             nav ul li a:hover {
                 color: #FFFFFF;
             }
-
+ 
             main {
                 padding: 40px;
             }
-
+ 
             h1 {
                 font-family: 'Space Grotesk', sans-serif;
                 font-size: 3rem;
                 letter-spacing: -1px;
                 margin-bottom: 10px;
             }
-
+ 
+            h2 {
+                font-family: 'Space Grotesk', sans-serif;
+                font-size: 1.8rem;
+                margin-top: 0;
+                margin-bottom: 14px;
+            }
+ 
             p {
-                font-size: 1.1rem;
+                font-size: 1.05rem;
                 color: #A0AEC0;
+                line-height: 1.6;
             }
-
-            .cta-button {
-                display: inline-block;
-                margin-top: 20px;
-                padding: 12px 28px;
-                background-color: #FFFFFF;
-                color: #031E36;
-                text-decoration: none;
-                font-weight: 600;
-                border-radius: 4px;
+ 
+            .research-image {
+                display: block;
+                width: 100%;
+                max-width: 600px;
+                margin: 0 auto 16px auto;
+                border-radius: 8px;
             }
-
-            .button {
+ 
+            .res-button {
                 background-color: #2563EB;
                 border: none;
                 color: white;
@@ -89,76 +95,50 @@
                 cursor: pointer;
                 border-radius: 10px;
                 border: 1px solid #2563EB;
-                margin-right: 16px;
                 font-weight: bold;
+                font-family: 'Space Grotesk', sans-serif;
             }
-
-            .team-button {
-                background-color: white;
-                border: none;
-                color: #031E36;
-                padding: 15px 32px;
+ 
+            .res-button:hover {
+                background-color: #1D4ED8;
+            }
+ 
+            .focus-list {
+                margin: 16px 0;
+                padding-left: 20px;
+                color: #A0AEC0;
+            }
+ 
+            .focus-list li {
+                margin-bottom: 8px;
+                line-height: 1.5;
+            }
+ 
+            .research-section {
+                border-top: 1px solid #1E293B;
+                padding-top: 30px;
+                margin-top: 30px;
+            }
+ 
+            .cta-section {
                 text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                cursor: pointer;
-                border-radius: 10px;
-                border: 1px solid #2563EB;
-                border-width: 3px;
-                font-weight: bold;
+                margin-top: 60px;
+                padding: 40px;
+                background-color: #1E293B;
+                border-radius: 16px;
+                border: 1px solid #334155;
             }
-
-            .card:hover {
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ 
+            .cta-section h2 {
+                margin-top: 0;
             }
-            
-            .container {
-                padding: 2px 16px;
-                justify-content: center;
-            }
-
-            .card {
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                padding: 16px;
-                text-align: center;
-                background-color: #f1f1f1;
-                background-color: #1E293B; 
-                border: 1px solid #334155;    
-                border-radius: 12px;    
-                justify-content: center;
-            }
-
-            .column {
-                float: left;
-                width: 25%;
-                padding: 0 10px;
-            }
-            
-            .row {margin: 0 -5px;}
-
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-
-            @media screen and (max-width: 600px) {
-                .column {
-                    width: 100%;
-                    display: block;
-                    margin-bottom: 20px;
-                }
-            }
-
+ 
             footer {
-                background-color: #f1f1f1;
                 text-align: center;
                 padding: 8px;
                 background-color: #1E293B;
                 color: #A0AEC0;
             }
-
         </style>
 
     </head>
@@ -175,7 +155,7 @@
                             <li><a href="about.html">About</a></li>
                             <li><a href="research.html">Research</a></li>
                             <li><a href="team.html">Team</a></li>
-                            <li><a href="publications.html">Publications</a></li>
+                            <li><a href="news.html">News & Updates</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
@@ -186,34 +166,75 @@
             <tr>
                 <td>
                     <main>
-                        <h1>Research Areas</h1>
-                        <p>Our research spans multiple domains of cybersecurity, combining theoretical foundations with practical application</p>
+                        <div>
+                            <h1>Research Areas</h1>
+                            <p>Our research spans multiple domains of cybersecurity, combining theoretical foundations with practical application</p>
+                        </div><br>
+
+                        <div class="research-section">
+                            <h2>Cryptography & Post-Quantum Security</h2>
+                        <img src="https://www.nist.gov/sites/default/files/styles/960_x_960_limit/public/images/2022/04/05/Crypto-rev1.png.webp?itok=9XUCFsba" alt="Quantum Computing" style="width:100%; max-width: 600px; border-radius: 8px; margin-bottom: 12px;">
+                        <p>As quantum computing advances, cryptographic systems relying on classical hardness assumptions face long-term risk. This area evaluates the readiness of post-quantum signature schemes for real-world deployment, with emphasis on performance trade-offs during protocol handshakes.</p>
+                        <ul class="focus-list">
+                            <li>Post-quantum signature schemes</li>
+                            <li>Performance evaluation of quantum-resistant algorithms</li>
+                            <li>Integration of post-quantum cryptography into existing protocols</li>
+                        </ul>
+                        <a href="team.html#chantiqia" class="res-button">Meet the Lead</a>
+
+                        </div><br>
+
+                        <div class="research-section">
+                            <h2>Network Security</h2>
+                        <img src="https://privacera.com/wp-content/uploads/2025/02/Implementing-DSG-blog_feature1.jpg" alt="Network Security" style="width:100%; max-width: 600px; border-radius: 8px; margin-bottom: 12px;">
+                        <p>This area focuses on identifying and mitigating threats at the network layer, from anomaly detection in traffic patterns to uncovering protocol-level weaknesses that are often overlooked in standard security audits.</p>
+                        <ul class="focus-list">
+                            <li>Anomaly-based intrusion detection for enterprise network traffic</li>
+                            <li>Protocol-level vulnerability analysis in modern network infrastructure</li>
+                            <li>Traffic classification techniques for early threat identification</li>
+                        </ul>
+                        <a href="team.html#carl" class="res-button">Meet the Lead</a>
+                        </div><br>
+
+                        <div class="research-section">
+                            <h2>AI & Machine Learning Security</h2>
+                        <img src="https://media.licdn.com/dms/image/v2/D4E12AQGV045oEaZOZQ/article-cover_image-shrink_720_1280/B4EZZnvmI.HkAI-/0/1745497253093?e=1792022400&v=beta&t=gcqesVNFinhhGDCnbmuklax1jUvUOfFsNNOxRqt45Tg" alt="Network Security" style="width:100%; max-width: 600px; border-radius: 8px; margin-bottom: 12px;">
+                        <p>As machine learning systems are increasingly deployed in security-critical contexts, this area examines how adversaries can manipulate model behavior, and what defenses can preserve model integrity under attack.</p>
+                        <ul class="focus-list">
+                            <li>Adversarial example generation and robustness testing</li>
+                            <li>Defense mechanisms against model evasion and poisoning attacks</li>
+                            <li>Security implications of large-scale AI system deployment</li>
+                        </ul>
+                        <a href="team.html#dorothy" class="res-button">Meet the Lead</a>
+
+                        </div><br>
+
+                        <div class="research-section">
+                            <h2>IoT & Embedded Systems Security</h2>
+                            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*W1s_uGAhChGPxpw88_hVDg.png" alt="Network Security" style="width:100%; max-width: 600px; border-radius: 8px; margin-bottom: 12px;">
+                            <p>Resource-constrained devices often trade security for efficiency. This emerging research area explores lightweight mechanisms that preserve device performance while closing common security gaps in embedded systems.</p>
+                            <ul class="focus-list">
+                                <li>Lightweight authentication protocols for constrained hardware</li>
+                                <li>Security risk assessment in consumer and industrial IoT devices</li>
+                            <li>Firmware-level vulnerability identification</li>
+                        </ul>
+                        <a href="team.html#ralph" class="res-button">Meet the Lead</a>
+                        </div>
+
+                        <div style="margin-top: 40px; text-align: center;">
+                            <h1>Want to Work With Us?</h1>
+                        <p>Whether you're exploring a research collaboration or need advisory support, we'd love to hear from you.</p>
+                        <a href="contact.html" class="res-button">Get in Touch</a>
+                        </div> <br>
                     </main>
                 </td>
             </tr>
-            
-            <tr>
-                <td>
-                    
-                </td>
-            </tr>
-            
-            <tr>
-                <td>
-                    
-                </td>
-            </tr>
-            
-            <tr>
-                <td>
-                    <section></section>
-                </td>
-            </tr>
+        
 
             <tr>
                 <td>
                     <footer>
-                        <p>GroverSec @2026</p>
+                        <p>GroverSec &copy; 2026</p>
                     </footer>
                 </td>
             </tr>
@@ -221,8 +242,6 @@
     </body>
 
 </html>
-    </td>
-  </tr>
 
 </table>
     </body>
