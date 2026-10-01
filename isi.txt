@@ -1,6 +1,0 @@
-index.html — Home: hero section, ringkasan singkat perusahaan, highlight 3-4 kategori riset, mungkin CTA ke halaman kontak
-about.html — Tentang Kami: visi/misi, sejarah singkat (karangan), kenapa nama "Grover" dipilih (bisa jadi konten menarik)
-research.html — Research Areas: daftar kategori riset (Cryptography & PQC, Network Security, AI/ML Security, dst) dengan deskripsi tiap kategori
-team.html — People: daftar peneliti fiktif + bidang keahlian (bisa pakai tabel)
-publications.html — Publications: daftar paper/riset (boleh karangan judul yang relevan ke tiap kategori riset)
-contact.html — Contact: form kontak, alamat, mungkin embed map

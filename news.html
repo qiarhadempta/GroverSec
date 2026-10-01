@@ -3,169 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>GroverSec</title>
+        <title>News & Updates - GroverSec</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-        
-        <style>
-            body {
-                background-color: #0F172A;
-                color: #FFFFFF;
-                font-family: 'Inter', sans-serif;
-                margin: 0;
-                padding: 0;
-            }
 
-            nav {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 20px 40px;
-                border-bottom: 1px solid #0A3A5C;
-            }
-
-            nav .logo {
-                font-family: 'Space Grotesk', sans-serif;
-                font-weight: 700;
-                font-size: 1.3rem;
-            }
-
-            nav ul {
-                list-style: none;
-                display: flex;
-                gap: 24px;
-                margin: 0;
-                padding: 0;
-            }
-
-            nav ul li a {
-                color: #A0AEC0;
-                text-decoration: none;
-                font-size: 0.95rem;
-            }
-
-            nav ul li a:hover {
-                color: #FFFFFF;
-            }
-
-            main {
-                padding: 40px;
-            }
-
-            h1 {
-                font-family: 'Space Grotesk', sans-serif;
-                font-size: 3rem;
-                letter-spacing: -1px;
-                margin-bottom: 10px;
-            }
-
-            p {
-                font-size: 1.1rem;
-                color: #A0AEC0;
-            }
-
-            .cta-button {
-                display: inline-block;
-                margin-top: 20px;
-                padding: 12px 28px;
-                background-color: #FFFFFF;
-                color: #031E36;
-                text-decoration: none;
-                font-weight: 600;
-                border-radius: 4px;
-            }
-
-            .button {
-                background-color: #2563EB;
-                border: none;
-                color: white;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                cursor: pointer;
-                border-radius: 10px;
-                border: 1px solid #2563EB;
-                margin-right: 16px;
-                font-weight: bold;
-            }
-
-            .team-button {
-                background-color: white;
-                border: none;
-                color: #031E36;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                cursor: pointer;
-                border-radius: 10px;
-                border: 1px solid #2563EB;
-                border-width: 3px;
-                font-weight: bold;
-            }
-
-            .card:hover {
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-            }
-            
-            .container {
-                padding: 2px 16px;
-                justify-content: center;
-            }
-
-            .card {
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                padding: 16px;
-                text-align: center;
-                background-color: #f1f1f1;
-                background-color: #1E293B; 
-                border: 1px solid #334155;    
-                border-radius: 12px;    
-                justify-content: center;
-            }
-
-            .column {
-                float: left;
-                width: 25%;
-                padding: 0 10px;
-            }
-            
-            .row {margin: 0 -5px;}
-
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-
-            @media screen and (max-width: 600px) {
-                .column {
-                    width: 100%;
-                    display: block;
-                    margin-bottom: 20px;
-                }
-            }
-
-            footer {
-                background-color: #f1f1f1;
-                text-align: center;
-                padding: 8px;
-                background-color: #1E293B;
-                color: #A0AEC0;
-            }
-
-        </style>
+        <link rel="stylesheet" href="styles.css">
 
     </head>
 
     <body>
         <table width="100%" cellpadding="0" cellspacing="0">
-            
+
             <tr>
                 <td>
                     <nav>
@@ -175,35 +25,75 @@
                             <li><a href="about.html">About</a></li>
                             <li><a href="research.html">Research</a></li>
                             <li><a href="team.html">Team</a></li>
-                            <li><a href="news.html">News & Updates</a></li>
+                            <li><a href="updates.html">Updates</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
+                </td>
+            </tr>
 
-                </td>
-            </tr>
-            
             <tr>
                 <td>
+                    <main>
+                        <h1>News &amp; Updates</h1>
+                        <p>Discover the latest from GroverSec</p>
+
+                        <div class="news-list">
+
+                            <div class="news-card">
+                                <img src="https://www.nist.gov/sites/default/files/styles/960_x_960_limit/public/images/2026/09/10/Image_for_nuclear_news_story.jpeg.webp?itok=5lvmSg73" alt="NIST-Developed Quantum Sensors">
+                                <div class="news-content">
+                                    <h3>NIST-Developed Quantum Sensors Improve Nuclear Monitoring</h3>
+                                    <p class="news-overview">Our cryptography team completed a comparative performance study of ML-DSA and SLH-DSA within TLS 1.3 handshakes.</p>
+                                    <a href="https://www.nist.gov/news-events/news/2026/09/nist-developed-quantum-sensors-improve-nuclear-monitoring" class="read-more">Read more &rarr;</a>
+                                </div>
+                            </div>
+
+                            <div class="news-card">
+                                <img src="https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202608/TONTOU-MIT%20News.jpg?itok=N3ttu0tl" alt="New IoT Security Lead">
+                                <div class="news-content">
+                                    <h3>New type of attack can slip past the defenses in your computer’s processor</h3>
+                                    <p class="news-overview">MIT CSAIL researchers found a way to exploit a split-second gap in chip security — and used it to acquire a Linux system’s password file.</p>
+                                    <a href="https://news.mit.edu/2026/new-type-of-attack-can-slip-past-computer-processor-defenses-0827" class="read-more">Read more &rarr;</a>
+                                </div>
+                            </div>
+
+                            <div class="news-card">
+                                <img src="https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202604/MIT_Post-Quantum-01-press_0.jpg?itok=6pf_slPm" alt="ITB Collaboration">
+                                <div class="news-content">
+                                    <h3>New chip can protect wireless biomedical devices from quantum attacks</h3>
+                                    <p class="news-overview">Ultra-efficient chip design enables extremely strong cryptography algorithms to run on energy-constrained edge devices.</p>
+                                    <a href="https://news.mit.edu/2026/new-chip-can-protect-wireless-biomedical-devices-from-quantum-attacks-0423" class="read-more">Read more &rarr;</a>
+                                </div>
+                            </div>
+
+                            <div class="news-card">
+                                <img src="https://picsum.photos/seed/adversarial/400/300" alt="Adversarial Robustness Paper">
+                                <div class="news-content">
+                                    <h3>New Paper on Adversarial Robustness in Intrusion Detection</h3>
+                                    <p class="news-overview">Our AI security team published findings on defending vision-based intrusion detection systems against adversarial attacks.</p>
+                                    <a href="#" class="read-more">Read more &rarr;</a>
+                                </div>
+                            </div>
+
+                            <div class="news-card">
+                                <img src="https://news.mit.edu/sites/default/files/styles/term_page__news_article/public/images/202504/MIT-Private-Algorithm-01-press.jpg?itok=L_PvjJmZ" alt="One Year Milestone">
+                                <div class="news-content">
+                                    <h3>Promptware, cloud security trends for 2026, and what the Xbox One hack means for cybersecurity</h3>
+                                    <p class="news-overview">Someone finally cracked the Xbox One after 13 years. Here’s why security pros should care. </p>
+                                    <a href="https://www.ibm.com/think/podcasts/security-intelligence/promptware-cloud-security-trends-2026-xbox-one-hack-cybersecurity" class="read-more">Read more &rarr;</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="cta-section">
+                        <h2>Want to Work With Us?</h2>
+                        <p>Whether you're exploring a research collaboration or need advisory support, we'd love to hear from you.</p>
+                        <a href="contact.html" class="cta-button">Get in Touch</a>
+                    </div>
                     
-                </td>
-            </tr>
-            
-            <tr>
-                <td>
-                    
-                </td>
-            </tr>
-            
-            <tr>
-                <td>
-                    
-                </td>
-            </tr>
-            
-            <tr>
-                <td>
-                    <section></section>
+                    </main>
                 </td>
             </tr>
 
@@ -215,13 +105,6 @@
                 </td>
             </tr>
         </table>
-    </body>
-
-</html>
-    </td>
-  </tr>
-
-</table>
     </body>
 
 </html>
